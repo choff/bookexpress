@@ -1,0 +1,45 @@
+\documentclass[a4paper,12pt,oneside,headsepline]{scrartcl}
+
+\usepackage{graphicx}
+\usepackage{longtable}
+\usepackage{tabularx}
+\usepackage{setspace}
+\usepackage{hyperref}
+\usepackage{float}
+
+%\usepackage{scrpage2}
+%\pagestyle{scrheadings}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+
+%\usepackage{lastpage}
+
+\KOMAoptions{parskip=half}
+\KOMAoptions{DIV=12}
+
+\onehalfspacing
+
+%\clearscrheadfoot
+
+%\ihead{Structured and Modular Design -> should be: current chapter}
+%\ohead{Page \thepage\  of XXX}
+\lhead{\nouppercase{\rightmark} (\nouppercase{\leftmark})}
+\chead{}
+\rhead{}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{#1}}{}}
+
+\lfoot{Version X.X}
+\cfoot{}
+\rfoot{\today}
+
+\subject{Software Engineering / Book Express}
+\title{Structured and Modular Design}
+
+\author{Christoph Wurm, Stefan Lenzen, Christian Hoff}
+\date{\today}
