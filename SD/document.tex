@@ -132,7 +132,104 @@ is generated.
 
 At the end of each month, the virtual account's balance is collected from the customer's bank account.
 
-\section{Arrange delivery}
+\section{\texttt{Arrange delivery}}
+Delivery to the customer has to be arranged.
+
+It is \emph{BookExpress'} company promise that no order from their own stock takes more than 24 hours to reach the customer.
+
+Therefore, \emph{BookExpress} itself has a large stock of books. However, it is impossible to store so many books as to be \emph{always}
+able to deliver every book in any desired quantity by itself.
+
+Thus, there is an alternative delivery mode: Delivery from publisher. If an ordered book is not available in the requested quantity
+the order is relayed to the publisher of this book and the goods are delivered directly to the bookstore to ensure a minimal time to sell.
+
+\section{\texttt{Delivery from stock}}
+If the ordered books are available in the necessary quantity in \emph{BookExpress'} stock the delivery to the ordering bookstore is
+arranged from there.
+
+Several steps have to be taken until the books reach the customer:
+\begin{itemize}
+	\item The goods have to be taken from the stock to the delivery truck.
+		\begin{itemize}
+			\item If the number of available books decreases below a reasonable level, a stock refill from the publisher is ordered.
+		\end{itemize}
+	\item A route to the customer's location is calculated.
+	\item The truck delivers the goods directly to the bookstore (most bookstores even give \emph{BookExpress} keys to their store rooms).
+\end{itemize}
+
+
+\section{\texttt{Delivery from publisher}}
+If \emph{BookExpress'} own stock does not have the requested books the order is relayed to the books' publishers. They arrange a direct delivery
+to the client, thus minimizing the waiting time inflicted upon the end customer.
+
+Often, a second order will be placed, requesting delivery of said books from the publisher to the \emph{BookExpress} stock. Thus, the next time these
+books are requested the order will be serviced from the stock.
+
+
+\section{\texttt{Register new bookstore}}
+A bookstore that wants to become a \emph{BookExpress} contractor has to request contractorship by submitting an application to \emph{BookExpress}.
+
+The request is validated:
+\begin{description}
+	\item[Credentials] It is verified that the requestor really \emph{is} a bookstore.
+
+	                   This is done by checking its Trade Register entry.
+	\item[Credit standing] Further verification ensures that the requestor is solvent.
+
+	                       While this cannot be automatically determined with absolute certainty, things like checking for any pending
+						   insolvency proceedings can provide sufficient information.
+\end{description}
+
+
+\section{\texttt{Register new publisher}}
+Registration of a publisher can be initiated in two ways:
+\begin{enumerate}
+	\item The publisher can request to be added to \emph{BookExpress'} contractored publishing houses.
+	\item \emph{BookExpress} might decide to contact the publisher and request to be recognized as a distributor, eligible for large orders.
+	      
+		  This will be typically the case with greater publishing houses.
+\end{enumerate}
+
+
+\section{\texttt{Book search}}
+Every contracted bookstore has access to the extensive book database of \emph{BookExpress}.
+
+The access is provided in the form of a search service. Given any partial information about a book (such as title, author, date of publication, etc.)
+the service will compose and display a result set.
+
+Thus, a bookstore can search for books before ordering them.
+
+
+
+\chapter{Data repositories}
+The \emph{BookExpress} application contains several data repositories: \texttt{Customer data}, \texttt{Inventory data}, \texttt{accounting data} and \texttt{book data}.
+
+
+\section{\texttt{Customer data}}
+This repository contains information about each contracted bookstore.
+
+Information such as name, address, phone number or email address are stored here.
+
+It is used extensively throughout the application (verifying login credentials, calculating delivery routes, etc.).
+
+
+\section{\texttt{Inventory data}}
+Information about the current stock (mainly about stored books and their quantity) resides here.
+
+It is used to decide where to deliver from (stock or publisher) or when to reorder books.
+
+
+\section{\texttt{Accounting data}}
+Invoices, account balances and the like are stored here.
+
+There are many connections from \texttt{Customer data} to \texttt{Accounting data}. We deemed the datasets and their respective confidentialities (monetary
+information is more sensible than publicly available information such as a bookstore's name) distinct enough to justify two separate data repositories.
+
+
+\section{\texttt{Book data}}
+This is the extensive book database of \emph{BookExpress}.
+
+Every book that can be ordered is stored here with all the information necessary to conduct complex search operations.
 
 
 \end{document}
