@@ -12,7 +12,7 @@
 \pagenumbering{arabic}
 \setcounter{page}{4}
 
-\section{Document history}
+\chapter{Document history}
 \begin{longtable}[c]{|p{0.20\textwidth}|p{0.22\textwidth}|p{0.35\textwidth}|p{0.1\textwidth}|}
 \hline
 Editor(s) & Date & Purpose of editing & Version\\
@@ -23,7 +23,7 @@ All & October, 16th 2009 & First draft & 0.1 \\
 \caption{Document history}
 \end{longtable}
 \newpage
-\section{Introduction}
+\chapter{Introduction}
 The software architecture of a system is the set of structures needed to reason about the system, which comprise software elements, relations among them, and properties of both\footnote{\href{en.wikipedia.org/wiki/Software_architecture}{en.wikipedia.org/wiki/Software\_architecture}}.
 
 All these elements shall be described in the following chapters. The method of \emph{Structured and Modular Design} will be used to describe the architecture of the program core. The operating system environment, including interfaces to existing software, will also be discussed.
@@ -32,7 +32,7 @@ The design specification is threefold: In the beginning, a high-level overview o
 
 Secondly, we will elaborate on the defined function modules. We will conclude with a description of the data modules. Thereby a \emph{Data Dictionary} will be used to outline the format of all stored application data.
 \newpage
-\section{Architectural overview}
+\chapter{Architectural overview}
 As defined in the Software Requirement Specification by Team 2, a web interface will be provided for the customers of BookExpress. This includes both publishers and book stores. Publishers can use this interface to maintain a list of available book titles. For bookstores, the web interfaces provides a convenient way to order books and track the status of pending deliveries.
 
 The web interface will be programmed using \emph{Java Enterprise Edition 6}.
@@ -46,9 +46,9 @@ A desktop application will be used by the employees of BookExpress. Compared to 
 
 In addition a mobile client application is provided, which is going to be used by the employees working in the warehouse department. This system aims to support the employees during stock-keeping. It will pop up a notification whenever a book has been ordered. The application then shows the location of the ordered book in the warehouse such that the staff can easily find the ordered book. The software application will then ensure that one parcel is created for each bookstore, which contains the ordered books and an invoice.
 
-\section{Interfaces to existing software}
+\chapter{Interfaces to existing software}
 The BookExpress software depends on other software products for some auxiliary functionality. The interfaces to these programs will be described in this chapter.
-\subsection{DB2 database interface}
+\section{DB2 database interface}
 Certain data of the BookExpress software including customer and order information has to be stored in a persistent way. For this purpose, an existing database software will be used.
 
 \emph{DB2} is a relational database software solution by IBM. We have chosen DB2 mainly because it focuses on business customers with high demands concerning performance, availability and support. It is also a mature programm which runs on many different platforms including(but not limited to) Linux, z/OS and Windows.
@@ -56,11 +56,11 @@ Certain data of the BookExpress software including customer and order informatio
 \emph{Java DataBase Connectivity(JDBC)} is a java binding which provides access to a wide range of relational databases including DB2. JDBC will serve as the binding between the BookExpress software and the database. Being a part of the Java framework, it also runs on every platform that is supported by Java.
 
 \emph{Hibernate} is an object-relation model which maps entities in database tables to their corresponding Java classes. We will use Hibernate to make the database entities accessible in an object-oriented manner.
-\subsection{TomTom navigation interface}
+\section{TomTom navigation interface}
 Usually a truck will deliver parcels to many bookstores, which makes a fast and efficient calculation of the delivery route necessary. For this reason, BookExpres relies on \emph{TomTom Navigator 7}, which will the route calculation and serve as a navigation system.
 
 TomTom provides an \emph{Application Programming Interface(API)} which makes the functions of TomTom accessible to other programs. BookExpress will use this API in order to calculate the fastest route to the bookstores. As soon as a truck becomes available, the API enables the route to be trasnferred to this specific truck automatically.
-\section{Design overview}
+\chapter{Design overview}
 The application design has been created using a method in Software Engeneering known as \emph{Structured and Modular Design}. As such, it includes data and function modules which have been arranged in three layers: User Interface layer, business layer and database layer.
 
 A design overview is provided in the picture below. For your convenience, we have included a more detailed illustration of each function module in the following chapter.
@@ -71,27 +71,45 @@ A design overview is provided in the picture below. For your convenience, we hav
 \caption{Modular design overview}
 \end{figure}
 
+\chapter{Module documentation}
+In this section all modules and their connections, dependencies and calling hierarchies will be explained.
 
+\section{\texttt{Order book}}
+This is one of the two high-level functions directly called by the user.
 
-\begin{longtable}[l]{|p{0.1\textwidth}|p{0.61\textwidth}|p{0.2\textwidth}|}
-\hline
-Number & Description & Reference to SRS  \\
-\hline
-\hline
+When calling this function the bookstore has already determined (perhaps with the help of the function \texttt{Search})
+which books it wants to order.
 
-DT0 & Ordering & \\
-\hline
-DT0.1 & Confirm order & \\
-\hline
-DT1 & Customer log-in & \\
-\hline
-DT2 & Select items & \\
-\hline
-DT3 & Check availability & \\
-\hline
+For the function to do its work, the user has to submit the ISBN numbers and quantities of each book he wants to order.
+All other information, e.g. whether to deliver from stock or from publisher or where to deliver the order will be automatically
+performed by the \emph{BookExpress} system from other data sources (in this case, the stock and customer databases).
 
-\caption{Decision Tables}
-\end{longtable}
+When called, the function \texttt{Order book} has to perform several steps:
+\begin{enumerate}
+	\item Validate user-supplied data.
+
+		  \begin{description}
+		  	\item[ISBN numbers] Check if these are valid by looking them up in \emph{BookExpress'} extensive book database.
+			\item[Quantities]   Perform a plausibility check. If a small-town bookstore is suddenly ordering five-digit amounts of books,
+			                    there is probably something wrong.
+
+								It will still be possible to place such an order, but only after it has been verified, e.g. by phone.
+			\item[User credentials] Username and password have to be valid, of course.
+		  \end{description}
+   \item The order, which we can now be sure of being valid and coming from one of the customers, is entered into the database.
+   \item Two things have to be done for the order to be successfully completed: Payment and delivery. Thus, control flow is passed to the
+         two modules \texttt{Payment} and \texttt{Arrange delivery}.
+\end{enumerate}
+
+\section{\texttt{Payment}}
+Every order has to be paid for.
+
+Every customer has a virtual monetary account in the \emph{BookExpress} system that is charged for each order. Simultaneously, an invoice
+is generated.
+
+At the end of each month, the virtual account's balance is collected from the customer's bank account.
+
+\section{Arrange delivery}
 \newpage
 \begin{appendix}
 \section{Glossary}

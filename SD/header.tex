@@ -1,4 +1,11 @@
-\documentclass[a4paper,12pt,oneside,headsepline]{scrartcl}
+\documentclass[a4paper,12pt,oneside,headsepline]{scrreprt}
+%\documentclass[a4paper,12pt,oneside,headsepline]{scrartcl}
+
+\usepackage{ifxetex}
+\ifxetex
+	\usepackage{fontspec}
+		\setmainfont{Gentium}
+\fi
 
 \usepackage{graphicx}
 \usepackage{longtable}
