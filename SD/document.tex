@@ -61,11 +61,17 @@ Usually a truck will deliver parcels to many bookstores, which makes a fast and 
 
 TomTom provides an \emph{Application Programming Interface(API)} which makes the functions of TomTom accessible to other programs. BookExpress will use this API in order to calculate the fastest route to the bookstores. As soon as a truck becomes available, the API enables the route to be trasnferred to this specific truck automatically.
 \section{Design overview}
+The application design has been created using a method in Software Engeneering known as \emph{Structured and Modular Design}. As such, it includes data and function modules which have been arranged in three layers: User Interface layer, business layer and database layer.
+
+A design overview is provided in the picture below. For your convenience, we have included a more detailed illustration of each function module in the following chapter.
+
 \begin{figure}[H]
 \centering
 \includegraphics[scale=0.5]{design.pdf}
 \caption{Modular design overview}
 \end{figure}
+
+
 
 \begin{longtable}[l]{|p{0.1\textwidth}|p{0.61\textwidth}|p{0.2\textwidth}|}
 \hline
