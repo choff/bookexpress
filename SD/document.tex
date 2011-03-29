@@ -71,6 +71,9 @@ A design overview is provided in the picture below. For your convenience, we hav
 \caption{Modular design overview}
 \end{figure}
 
+As already mentioned above, the document is divided into three layers. Functionality that should be made visible to the user is located in the top layer - the \emph{User Interface Layer}.
+
+Functions in the User Interface Layer rely on methods in the \emph{Business Layer} for data manipulation. The Business Layer is where the actual business logic is implemented, while the User Interface Layer provides a convenient frontend to the user.
 \chapter{Module documentation}
 In this section all modules and their connections, dependencies and calling hierarchies will be explained.
 
