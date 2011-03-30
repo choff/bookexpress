@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:osb="http://www.openswatchbook.org/uri/2009/osb"
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:xlink="http://www.w3.org/1999/xlink"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="297mm"
+   height="210mm"
+   id="svg2985"
+   version="1.1"
+   inkscape:version="0.48.0 r9654"
+   sodipodi:docname="Neues Dokument 2.2011_03_28_16_39_13.0.svg">
+  <defs
+     id="defs2987">
+      <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3930">
+      <stop
+         style="stop-color:#8ae234;stop-opacity:1;"
+         offset="0"
+         id="stop3932" />
+      <stop
+         style="stop-color:#8ae234;stop-opacity:0;"
+         offset="1"
+         id="stop3934" />
+    </linearGradient>
+        <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3930"
+       id="linearGradient3936"
+       x1="100"
+       y1="132"
+       x2="100"
+       y2="82"
+       gradientUnits="userSpaceOnUse" />
+       
+
+           <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3940">
+      <stop
+         style="stop-color:#7171ff;stop-opacity:1;"
+         offset="0"
+         id="stop3942" />
+      <stop
+         style="stop-color:#7171ff;stop-opacity:0;"
+         offset="1"
+         id="stop3944" />
+    </linearGradient>
+        <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3940"
+       id="linearGradient3946"
+       x1="60"
+       y1="340"
+       x2="60"
+       y2="290"
+       gradientUnits="userSpaceOnUse" />  
+       
+       
+      <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3950">
+      <stop
+         style="stop-color:#e3821c;stop-opacity:1;"
+         offset="0"
+         id="stop3932" />
+      <stop
+         style="stop-color:#e3821c;stop-opacity:0;"
+         offset="1"
+         id="stop3934" />
+    </linearGradient>
+        <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3950"
+       id="linearGradient3956"
+       x1="330"
+       y1="440"
+       x2="330"
+       y2="330"
+       gradientUnits="userSpaceOnUse" />
+      <linearGradient
+       inkscape:collect="always"
+       id="linearGradient3960">
+      <stop
+         style="stop-color:#906090;stop-opacity:1;"
+         offset="0"
+         id="stop3932" />
+      <stop
+         style="stop-color:#906090;stop-opacity:0;"
+         offset="1"
+         id="stop3934" />
+    </linearGradient>
+        <linearGradient
+       inkscape:collect="always"
+       xlink:href="#linearGradient3960"
+       id="linearGradient3966"
+       x1="200"
+       y1="670"
+       x2="200"
+       y2="620"
+       gradientUnits="userSpaceOnUse" />
+    <marker
+       inkscape:stockid="Arrow1Lend"
+       fill="#000000"
+       orient="auto"
+       refY="0.0"
+       refX="0.0"
+       id="Arrow1Lend"
+       style="overflow:visible;">
+      <path
+         id="path5028"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         style="fill-rule:evenodd;stroke:#000000;stroke-width:1.0pt;marker-start:none;"
+         transform="scale(0.8) rotate(180) translate(12.5,0)" />
+    </marker>
+
+  </defs>
+  <sodipodi:namedview
+     inkscape:document-units="mm"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1"
+     inkscape:cx="490"
+     inkscape:cy="380"
+     inkscape:current-layer="layer1"
+     id="namedview2989"
+     showgrid="false"
+     inkscape:object-nodes="true"
+     inkscape:object-paths="false"
+     inkscape:window-width="1290"
+     inkscape:window-height="1002"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1" />
+  <metadata
+     id="metadata2991">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+     <rect
+      style="fill:#e6e6ff;fill-rule:nonzero;stroke:#000000;stroke-width:0.85748033000000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+	id="rectbg"
+	width="1010"
+	height="700"
+	rx="20"
+	x="20"
+	y="20"/>
+     <rect
+       style="fill:none;fill-rule:evenodd;stroke:#c04010;stroke-width:4px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-20"
+       width="950"
+       height="114"
+       rx="10"
+       x="50"
+       y="50" />
+       	<text x="40" y="40"
+		font-family="verdana"
+		font-size="20px"
+		font-weight="bold"
+		>
+    User Interface Layer
+	</text>
+	    <rect
+       style="fill:url(#linearGradient3936);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-07"
+       width="100"
+       height="50"
+       rx="5"
+       x="100"
+       y="82" />  
+      <text x="110" y="102"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Deliver
+	</text>  
+	     <text x="115" y="120"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	from stock
+	</text> 
+    <rect
+       style="fill:url(#linearGradient3936);fill-rule:nonzero;stroke:#000000;stroke-width:0.85748033000000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       id="rect2994"
+       width="100"
+       height="50"
+       rx="5"
+       x="370"
+       y="82"/>
+       	<text x="384" y="102"
+	
+		font-family="verdana"
+		font-size="10px"
+		font-weight="bold"
+		
+		>
+	    Order
+	</text>
+       	<text x="405" y="120"
+	
+		font-family="verdana"
+		font-size="10px"
+		font-weight="bold"
+		
+		>
+	    books
+	</text> 
+
+          <rect
+       style="fill:url(#linearGradient3936);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-4"
+       width="100"
+       height="50"
+       rx="5"
+       x="530"
+       y="82" />
+       <text x="535" y="102"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	   Register new
+	</text>
+	 	<text x="540" y="120"
+		font-family="verdana"
+		font-size="10px"
+		font-weight="bold">
+	   bookstore
+	</text>
+     <rect
+       style="fill:url(#linearGradient3936);fill-rule:nonzero;stroke:#000000;stroke-width:0.85748033000000002;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;stroke-miterlimit:4;stroke-dasharray:none;fill-opacity:1"
+       id="rect2994-5"
+       width="100"
+       height="50"
+       rx="5"
+       x="690"
+       y="82" />
+              <text x="695" y="102"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	   Register new
+	</text>
+	 	<text x="700" y="120"
+		font-family="verdana"
+		font-size="10px"
+		font-weight="bold">
+	   publisher
+	</text>
+        <rect
+       style="fill:url(#linearGradient3936);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1"
+       width="100"
+       height="50"
+       rx="5"
+       x="850"
+       y="82" />
+       <text x="870" y="102"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Search
+	</text>
+       <rect
+       style="fill:none;fill-rule:evenodd;stroke:#1f70c1;stroke-width:4px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-20"
+       width="950"
+       height="290"
+       rx="10"
+       x="50"
+       y="200" />
+      	<text x="40" y="190"
+		font-family="verdana"
+		font-size="20px"
+		font-weight="bold"
+		>
+    Business Layer
+	</text>
+<rect
+       style="fill:url(#linearGradient3946);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-3"
+       width="100"
+       height="50"
+       rx="5"
+       x="60"
+       y="290" />
+     <text x="75" y="310"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Deliver book
+	</text>   
+<rect
+       style="fill:url(#linearGradient3946);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-3"
+       width="100"
+       height="50"
+       rx="5"
+       x="180"
+       y="290" />    
+            <text x="190" y="310"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Stock refill
+	</text>  
+	<polygon fill="none"
+	    stroke="#1f70c1"
+	    stroke-width="4"
+	    points="380 215, 270 460, 490 460" />
+        <text x="350" y="300"
+	font-family="verdana"
+	font-size="13px"
+	    font-weight="bold">
+	Arange
+	</text>  
+	        <text x="355" y="315"
+	font-family="verdana"
+	font-size="13px"
+	    font-weight="bold">
+	delivery
+	</text>  
+	<rect
+       style="fill:url(#linearGradient3956);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-3"
+       width="100"
+       height="50"
+       rx="5"
+       x="330"
+       y="390" /> 
+
+	<text x="340" y="420"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	from publisher
+	</text>   
+    <rect
+       style="fill:url(#linearGradient3956);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-3"
+       width="100"
+       height="50"
+       rx="5"
+       x="330"
+       y="330" />
+         <text x="335" y="350"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	</text>  
+	     <text x="340" y="360"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	from stock
+	</text>   
+	<polygon fill="none"
+	    stroke="#1f70c1"
+	    stroke-width="4"
+	    points="600 215, 490 460, 710 460" />
+	   <text x="567" y="300"
+	font-family="verdana"
+	font-size="13px"
+	    font-weight="bold">
+	Payment
+	</text>       
+    <rect
+       style="fill:url(#linearGradient3956);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-01"
+       width="100"
+       height="50"
+       rx="5"
+       x="550"
+       y="330" />
+
+     <text x="550" y="350"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Charge customer
+	</text>  
+	     <text x="560" y="360"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	account
+	</text>   
+    <rect
+       style="fill:url(#linearGradient3956);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-2"
+       width="100"
+       height="50"
+       rx="5"
+       x="550"
+       y="390" />
+            <text x="560" y="410"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Generate
+	</text>  
+	     <text x="570" y="430"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	invoice
+	</text> 
+	
+	
+    <rect
+       style="fill:url(#linearGradient3946);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-7"
+       width="100"
+       height="50"
+       rx="5"
+       x="730"
+       y="290" />
+            <text x="740" y="310"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Check
+	</text>  
+	     <text x="740" y="330"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	credit standing
+	</text>  	
+	    <rect
+       style="fill:url(#linearGradient3946);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-0"
+       width="100"
+       height="50"
+       rx="5"
+       x="850"
+       y="290" />
+	<text x="860" y="310"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Verify
+	</text>  
+	     <text x="855" y="330"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	credentials
+	</text> 
+
+
+  
+    <rect
+       style="fill:none;fill-rule:evenodd;stroke:#f2cf01;stroke-width:4px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-20"
+       width="950"
+       height="120"
+       rx="10"
+       x="50"
+       y="585" />
+       	<text x="40" y="575"
+		font-family="verdana"
+		font-size="20px"
+		font-weight="bold"
+		>
+    Database Layer
+	</text>
+    <rect
+       style="fill:url(#linearGradient3966);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-9"
+       width="100"
+       height="50"
+       rx="5"
+       x="200"
+       y="620" />
+    <text x="210" y="640"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Financial data
+	</text> 
+
+    <rect
+       style="fill:url(#linearGradient3966);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-6"
+       width="100"
+       height="50"
+       rx="5"
+       x="400"
+       y="620" />
+           <text x="410" y="640"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Stock data
+	</text> 
+
+    <rect
+       style="fill:url(#linearGradient3966);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-4"
+       width="100"
+       height="50"
+       rx="5"
+       x="600"
+       y="620" />
+           <text x="610" y="640"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Customer data
+	</text> 
+    <rect
+       style="fill:url(#linearGradient3966);fill-rule:evenodd;stroke:#000000;stroke-width:0.8583886px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       id="rect2994-1-20"
+       width="100"
+       height="50"
+       rx="5"
+       x="800"
+       y="620" />
+    <text x="810" y="640"
+	font-family="verdana"
+	font-size="10px"
+	    font-weight="bold">
+	Book data
+	</text> 
+	
+	
+
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 150,132 110,288"
+       id="path3138"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect2994-1-3"
+       inkscape:connection-end-point="d4" />
+           <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 150,132 230,288"
+       id="path3138"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect2994-1-3"
+       inkscape:connection-end-point="d4" />
+      <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 420,132 380,210"
+       id="path3138"
+ />
+       <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 420,132 421,185"
+       id="path3138"
+/>
+       <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="M 420,185 980,185"
+       id="path3138"
+/>
+       <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 980,185 980,288"
+       id="path3138"
+/>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-end:url(#Arrow1Lend)"
+       d="M 420,132 599,210"
+       id="path3136"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4"
+       inkscape:connection-end="#rect2994-1-01"
+       inkscape:connection-end-point="d4" />
+    
+
+           <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 580,132 780,288"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:580connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:conne105ction-start-point="d4" />
+     
+            <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 740,132 780,288"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+            <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 740,132 900,288"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+        <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 110,340 450,618"
+	id="path3132"/>
+	        <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 230,340 450,618"
+	id="path3132"/>
+       <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 600,462 250,618"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+           <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 600,462 650,618"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+	 <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 780,340 650,618"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+        <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 900,340 650,618"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+        <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 900,132 980,288"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+    <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 980,288 980,450"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+        <path
+       style="fill:none;stroke:#000000;stroke-width:0.99921262;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none;marker-end:url(#Arrow1Lend)"
+       d="M 980,450 850,618"
+       id="path3132"
+       inkscape:connector-type="polyline"
+       inkscape:connector-curvature="3"
+       inkscape:connection-start="#rect2994"
+       inkscape:connection-start-point="d4" />
+  </g>
+</svg>
