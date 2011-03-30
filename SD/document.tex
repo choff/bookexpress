@@ -76,13 +76,10 @@ A design overview is provided in the picture below. For your convenience, we hav
 As already mentioned above, the document is divided into three layers. Functionality that should be made visible to the user is located in the top layer - the \emph{User Interface Layer}.
 
 Functions in the User Interface Layer rely on methods in the \emph{Business Layer} for data manipulation. The Business Layer is where the actual business logic is implemented, while the User Interface Layer provides a convenient frontend to the user.
-\chapter{Module documentation}
-In this section all modules and their connections, dependencies and calling hierarchies will be explained.
+\chapter{Function modules}
+In this section all function modules and their connections, dependencies and calling hierarchies will be explained.
 
 \section{\texttt{Order books}}
-
-\includegraphics[scale=0.8]{screenshots/Order_book.jpeg}
-
 This is one of the two high-level functions directly called by the user.
 
 When calling this function the bookstore has already determined (perhaps with the help of the function \texttt{Search})
@@ -110,9 +107,6 @@ When called, the function \texttt{Order book} has to perform several steps:
 \end{enumerate}
 
 \section{\texttt{Payment}}
-
-\includegraphics[scale=0.8]{screenshots/Payment.jpeg}
-
 Every order has to be paid for.
 
 Every customer has a virtual monetary account in the \emph{BookExpress} system that is charged for each order. Simultaneously, an invoice
@@ -122,9 +116,6 @@ At the end of each month, the virtual account's balance is collected from the cu
 
 
 \section{\texttt{Arrange delivery}}
-
-\includegraphics[scale=0.8]{screenshots/Arange_delivery.jpeg}
-
 Delivery to the customer has to be arranged.
 
 It is \emph{BookExpress'} company promise that no order from their own stock takes more than 24 hours to reach the customer.
@@ -136,9 +127,6 @@ Thus, there is an alternative delivery mode: Delivery from publisher. If an orde
 the order is relayed to the publisher of this book and the goods are delivered directly to the bookstore to ensure a minimal time to sell.
 
 \section{\texttt{Delivery from stock}}
-
-\includegraphics[scale=0.8]{screenshots/Arange_delivery_from_stock.jpeg}
-
 If the ordered books are available in the necessary quantity in \emph{BookExpress'} stock the delivery to the ordering bookstore is
 arranged from there.
 
@@ -154,9 +142,6 @@ Several steps have to be taken until the books reach the customer:
 
 
 \section{\texttt{Delivery from publisher}}                             
-
-\includegraphics[scale=0.8]{screenshots/Arange_delivery_from_publisher.jpeg}
-
 If \emph{BookExpress'} own stock does not have the requested books the order is relayed to the books' publishers. They arrange a direct delivery
 to the client, thus minimizing the waiting time inflicted upon the end customer.
 
@@ -165,9 +150,6 @@ books are requested the order will be serviced from the stock.
 
 
 \section{\texttt{Register new bookstore}}
-
-\includegraphics[scale=0.8]{screenshots/Register_bookstore.jpeg}
-
 A bookstore that wants to become a \emph{BookExpress} contractor has to request contractorship by submitting an application to \emph{BookExpress}.
 
 The request is validated:
@@ -183,9 +165,6 @@ The request is validated:
 
 
 \section{\texttt{Register new publisher}}
-
-\includegraphics[scale=0.8]{screenshots/Register_publisher.jpeg}
-
 Registration of a publisher can be initiated in two ways:
 \begin{enumerate}
 	\item The publisher can request to be added to \emph{BookExpress'} contractored publishing houses.
@@ -196,9 +175,6 @@ Registration of a publisher can be initiated in two ways:
 
 
 \section{\texttt{Book search}}
-
-\includegraphics[scale=0.8]{screenshots/search.jpeg}
-
 Every contracted bookstore has access to the extensive book database of \emph{BookExpress}.
 
 The access is provided in the form of a search service. Given any partial information about a book (such as title, author, date of publication, etc.)
@@ -208,15 +184,12 @@ Thus, a bookstore can search for books before ordering them.
 
 
 
-\chapter{Data repositories}
-The \emph{BookExpress} application contains several data repositories: \texttt{Customer data}, \texttt{Inventory data}, \texttt{accounting data} and \texttt{book data}.
+\chapter{Data modules}
+The \emph{BookExpress} application contains several data modules: \texttt{Customer data}, \texttt{Inventory data}, \texttt{accounting data} and \texttt{book data}.
 
 
 \section{\texttt{Customer data}}
-
-\includegraphics[scale=0.8]{screenshots/Customer_data.jpeg}
-
-This repository contains information about each contracted bookstore.
+This module contains information about each contracted bookstore.
 
 Information such as name, address, phone number or email address are stored here.
 
@@ -224,18 +197,12 @@ It is used extensively throughout the application (verifying login credentials, 
 
 
 \section{\texttt{Stock data}}
-
-\includegraphics[scale=0.8]{screenshots/Stock_data.jpeg}
-
 Information about the current stock (mainly about stored books and their quantity) resides here.
 
 It is used to decide where to deliver from (stock or publisher) or when to reorder books.
 
 
 \section{\texttt{Financial data}}
-
-\includegraphics[scale=0.8]{screenshots/Financial_data.jpeg}
-
 Invoices, account balances and the like are stored here.
 
 There are many connections from \texttt{Customer data} to \texttt{Accounting data}. We deemed the datasets and their respective confidentialities (monetary
@@ -243,9 +210,6 @@ information is more sensible than publicly available information such as a books
 
 
 \section{\texttt{Book data}}
-
-\includegraphics[scale=0.8]{screenshots/Book_data.jpeg}
-
 This is the extensive book database of \emph{BookExpress}.
 
 Every book that can be ordered is stored here with all the information necessary to conduct complex search operations.
