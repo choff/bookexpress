@@ -1,5 +1,12 @@
 \input{header}
 
+\makeindex
+\makeglossaries
+
+\newglossaryentry{Structured and Modular Design}{name="Structured and Modular Design",description={A design method in software engineering based on the principles function and type abstraction. Uses the two basic design elements known as data and function modules, which are arranged to represent a strcutured software architecture}}
+\newglossaryentry{Data Module}{name="Data Module",description={Used to represent type abstraction in structured design. Specifies a data type without providing implementation details, thus providing an abstrction from the internal storage of the data type to its outer representation. }}
+\newglossaryentry{Function Module}{name="Function Module",description={In structured design, a Function Module is used for functional abstraction. A Function Module specifies the parameters of the function without exposing implementation details. }}
+
 \begin{document}
 \pagenumbering{roman}
 \maketitle
@@ -28,11 +35,11 @@ All & March 30th 2011 & Final version & 1.0 \\
 \chapter{Introduction}
 The software architecture of a system is the set of structures needed to reason about the system, which comprise software elements, relations among them, and properties of both\footnote{\href{en.wikipedia.org/wiki/Software_architecture}{en.wikipedia.org/wiki/Software\_architecture}}.
 
-All these elements shall be described in the following chapters. The method of \emph{Structured and Modular Design} will be used to describe the architecture of the program core. The operating system environment, including interfaces to existing software, will also be discussed.
+All these elements shall be described in the following chapters. The method of \glslink{Structured and Modular Design}{\emph{Structured and Modular Design}} will be used to describe the architecture of the program core. The operating system environment, including interfaces to existing software, will also be discussed.
 
 The design specification is threefold: In the beginning, a high-level overview over the application design is provided and interfaces to existing programs are described.
 
-Secondly, we will elaborate on the defined function modules. We will conclude with a description of the data modules. Thereby a \emph{Data Dictionary} will be used to outline the format of all stored application data.
+Secondly, we will elaborate on the defined \glslink{Function Module}{function modules}. We will conclude with a description of the \glslink{Data Module}{data modules}. Thereby a \emph{Data Dictionary} will be used to outline the format of all stored application data.
 \newpage
 \chapter{Architectural overview}
 As defined in the Software Requirement Specification by Team 2, a web interface will be provided for the customers of BookExpress. This includes both publishers and book stores. Publishers can use this interface to maintain a list of available book titles. For bookstores, the web interfaces provides a convenient way to order books and track the status of pending deliveries.
@@ -55,7 +62,7 @@ Certain data of the BookExpress software including customer and order informatio
 
 \emph{DB2} is a relational database software solution by IBM. We have chosen DB2 mainly because it focuses on business customers with high demands concerning performance, availability and support. It is also a mature programm which runs on many different platforms including(but not limited to) Linux, z/OS and Windows.
 
-\emph{Java DataBase Connectivity(JDBC)} is a java binding which provides access to a wide range of relational databases including DB2. JDBC will serve as the binding between the BookExpress software and the database. Being a part of the Java framework, it also runs on every platform that is supported by Java.
+\emph{Java DataBase Connectivity(JDBC)} is a Java binding which provides access to a wide range of relational databases including DB2. JDBC will serve as the binding between the BookExpress software and the database. Being a part of the Java framework, it also runs on every platform that is supported by Java.
 
 \emph{Hibernate} is an object-relation model which maps entities in database tables to their corresponding Java classes. We will use Hibernate to make the database entities accessible in an object-oriented manner.
 \section{\texttt{TomTom navigation interface}}
@@ -63,7 +70,7 @@ Usually a truck will deliver parcels to many bookstores, which makes a fast and 
 
 TomTom provides an \emph{Application Programming Interface(API)} which makes the functions of TomTom accessible to other programs. BookExpress will use this API in order to calculate the fastest route to the bookstores. As soon as a truck becomes available, the API enables the route to be trasnferred to this specific truck automatically.
 \chapter{Design overview}
-The application design has been created using a method in Software Engeneering known as \emph{Structured and Modular Design}. As such, it includes data and function modules which have been arranged in three layers: User Interface layer, business layer and database layer.
+The application design has been created using a method in Software Engeneering known as \emph{Structured and Modular Design}. As such, it includes \glslink{Data Module}{data} and \glslink{Function Module}{function modules} which have been arranged in three layers: User Interface layer, business layer and database layer.
 
 A design overview is provided in the picture below. For your convenience, we have included a more detailed illustration of each function module in the following chapter.
 
@@ -107,6 +114,12 @@ When called, the function \texttt{Order book} has to perform several steps:
 \end{enumerate}
 
 \section{\texttt{Payment}}
+\begin{wrapfigure}{r}{0.3\textwidth}
+\centering
+\includegraphics[scale=0.30]{./screenshots/Payment.jpeg}
+\vspace{-20pt}
+\end{wrapfigure}
+
 Every order has to be paid for.
 
 Every customer has a virtual monetary account in the \emph{BookExpress} system that is charged for each order. Simultaneously, an invoice
@@ -115,7 +128,14 @@ is generated.
 At the end of each month, the virtual account's balance is collected from the customer's bank account.
 
 
+
 \section{\texttt{Arrange delivery}}
+\begin{wrapfigure}{l}{0.3\textwidth}
+\centering
+\vspace{-20pt}
+\includegraphics[scale=0.30]{./screenshots/Arange_delivery.jpeg}
+\end{wrapfigure}
+
 Delivery to the customer has to be arranged.
 
 It is \emph{BookExpress'} company promise that no order from their own stock takes more than 24 hours to reach the customer.
@@ -213,15 +233,6 @@ information is more sensible than publicly available information such as a books
 This is the extensive book database of \emph{BookExpress}.
 
 Every book that can be ordered is stored here with all the information necessary to conduct complex search operations.
-
-
 \newpage
-\begin{appendix}
-\chapter{Glossary}
-TODO: Insert glossary here
-\chapter{References}
-TODO: Insert references here
-\end{appendix}
-
-
+\printglossaries
 \end{document}
