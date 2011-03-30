@@ -6,8 +6,6 @@
 \newpage
 \tableofcontents
 \newpage
-\listoftables
-\newpage
 
 \pagenumbering{arabic}
 \setcounter{page}{4}
@@ -52,7 +50,7 @@ In addition a mobile client application is provided, which is going to be used b
 
 \chapter{Interfaces to existing software}
 The BookExpress software depends on other software products for some auxiliary functionality. The interfaces to these programs will be described in this chapter.
-\section{DB2 database interface}
+\section{\tt DB2 database interface}
 Certain data of the BookExpress software including customer and order information has to be stored in a persistent way. For this purpose, an existing database software will be used.
 
 \emph{DB2} is a relational database software solution by IBM. We have chosen DB2 mainly because it focuses on business customers with high demands concerning performance, availability and support. It is also a mature programm which runs on many different platforms including(but not limited to) Linux, z/OS and Windows.
@@ -60,7 +58,7 @@ Certain data of the BookExpress software including customer and order informatio
 \emph{Java DataBase Connectivity(JDBC)} is a java binding which provides access to a wide range of relational databases including DB2. JDBC will serve as the binding between the BookExpress software and the database. Being a part of the Java framework, it also runs on every platform that is supported by Java.
 
 \emph{Hibernate} is an object-relation model which maps entities in database tables to their corresponding Java classes. We will use Hibernate to make the database entities accessible in an object-oriented manner.
-\section{TomTom navigation interface}
+\section{\texttt{TomTom navigation interface}}
 Usually a truck will deliver parcels to many bookstores, which makes a fast and efficient calculation of the delivery route necessary. For this reason, BookExpres relies on \emph{TomTom Navigator 7}, which will the route calculation and serve as a navigation system.
 
 TomTom provides an \emph{Application Programming Interface(API)} which makes the functions of TomTom accessible to other programs. BookExpress will use this API in order to calculate the fastest route to the bookstores. As soon as a truck becomes available, the API enables the route to be trasnferred to this specific truck automatically.
@@ -69,9 +67,9 @@ The application design has been created using a method in Software Engeneering k
 
 A design overview is provided in the picture below. For your convenience, we have included a more detailed illustration of each function module in the following chapter.
 
-\begin{figure}[H]
+\begin{figure}[htb]
 \centering
-\includegraphics[scale=0.75,angle=270]{Modular_design.png}
+\includegraphics[scale=0.70,angle=270]{Modular_design.png}
 \caption{Modular design overview}
 \end{figure}
 
@@ -219,9 +217,9 @@ Every book that can be ordered is stored here with all the information necessary
 
 \newpage
 \begin{appendix}
-\section{Glossary}
+\chapter{Glossary}
 TODO: Insert glossary here
-\section{References}
+\chapter{References}
 TODO: Insert references here
 \end{appendix}
 

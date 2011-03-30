@@ -13,15 +13,20 @@
 \usepackage{setspace}
 \usepackage{hyperref}
 \usepackage{float}
-\usepackage{float}
 \usepackage{flafter}
-%\usepackage{scrpage2}
-%\pagestyle{scrheadings}
-
+\usepackage{xcolor}
+\usepackage{titlesec}
 \usepackage{fancyhdr}
+
 \pagestyle{fancy}
 
-%\usepackage{lastpage}
+
+\hypersetup{%
+    pdfborder = {0 0 0}
+}
+
+\addtokomafont{chapter}{\color[RGB]{83,88,85}}
+\addtokomafont{section}{\color[RGB]{97,105,100}}
 
 \KOMAoptions{parskip=half}
 \KOMAoptions{DIV=12}
@@ -42,12 +47,21 @@
 \renewcommand{\headrulewidth}{0.4pt}
 \renewcommand{\footrulewidth}{0.4pt}
 
-%\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
 \renewcommand{\sectionmark}[1]{\markright{\MakeUppercase{#1}}{}}
 
-\lfoot{Version X.X}
-\cfoot{}
+
+\lfoot{Version 1.0}
+\cfoot{\bfseries \thepage}
 \rfoot{\today}
+
+\fancypagestyle{plain}{%
+\fancyhf{} % clear all header and footer fields
+\fancyfoot[C]{\bfseries \thepage} % except the center
+\fancyfoot[L]{Version 1.0}
+\fancyfoot[R]{\today}
+\fancyhead[LO,RE]{\slshape  \leftmark} %
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}}
 
 \subject{Software Engineering / Book Express}
 \title{Structured and Modular Design}
